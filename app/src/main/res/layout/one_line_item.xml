@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="oneline"
+            type="com.thewooks.planyourday.OneLineData" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/one_line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkbox_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button_main"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:text="Will Be Replaced"
+            android:fontFamily="@font/kybo"
+            android:textStyle="normal"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/time_Button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/kybo"
+            android:layout_marginEnd="0dp"
+            android:background="@color/MyRed"
+            android:text="~~~~" />
+    </LinearLayout>
+
+</layout>
+

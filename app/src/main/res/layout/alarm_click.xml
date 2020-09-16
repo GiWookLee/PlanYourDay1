@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kybo"
+        android:layout_marginTop="100dp"
+        android:timePickerMode="spinner" />
+
+    <LinearLayout
+        android:id="@+id/Alarm_button_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+
+        >
+
+        <Button
+            android:id="@+id/alarm_setting"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:background="#CFC7C7"
+            android:fontFamily="@font/kybo"
+            android:text="알람 설정"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/alarm_cancel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:background="#CFC7C7"
+            android:fontFamily="@font/kybo"
+            android:text="알람 취소"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="420dp">
+
+        <LinearLayout
+            android:id="@+id/alarm_on_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="알람이 설정되었습니다"
+                android:fontFamily="@font/kybo"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/time_needSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="TIME"
+                android:fontFamily="@font/kybo"
+                android:textSize="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:fontFamily="@font/kybo"
+                android:text="에 알람이 울립니다"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/alarm_off_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kybo"
+                android:text="알람이 설정되어\n있지 않습니다"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textSize="50dp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>
